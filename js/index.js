@@ -1411,6 +1411,7 @@ const btnColored = document.querySelector(".btnColored");
 const btnColored1 = document.querySelector(".btnColored-1");
 const btnColored2 = document.getElementById("btnColored-2");
 const btnColored3 = document.getElementById("btnColored-3");
+const btnColored4 = document.getElementById("btnColored-4");
 const headA = document.getElementById("headA");
 const hwoIm =document.getElementById("hwoIm")
 const hwoIm1 =document.getElementById("hwoIm1")
@@ -1456,6 +1457,7 @@ elementsToUpdate.push(hwoIm10)
 elementsToUpdate.push(lNumber)
 elementsToUpdate.push(btnColored2)
 elementsToUpdate.push(btnColored3)
+elementsToUpdate.push(btnColored4)
 firstColoredBtn.addEventListener("click", function() {
   removeOldClasses();
   divColored.classList.add("lineardiv-purple");
@@ -1468,6 +1470,7 @@ firstColoredBtn.addEventListener("click", function() {
   btnColored1.classList.add("leftTop-purple");
   btnColored2.classList.add("leftTop-purple");
   btnColored3.classList.add("leftTop-purple");
+  btnColored4.classList.add("leftTop-purple");
   headA.classList.add("leftTop-purple");
   lNumber.classList.add("lineardiv-purple")
   hwoIm.classList.add("lineardiv-purple")
@@ -1494,6 +1497,7 @@ secondColoredBtn.addEventListener("click", function() {
   btnColored1.classList.add("leftTop-pink");
   btnColored2.classList.add("leftTop-pink");
   btnColored3.classList.add("leftTop-pink");
+  btnColored4.classList.add("leftTop-pink");
   headA.classList.add("leftTop-pink");
   lNumber.classList.add("lineardiv-pink")
   hwoIm.classList.add("lineardiv-pink")
@@ -1523,6 +1527,7 @@ thirdColoredBtn.addEventListener("click", function() {
   btnColored1.classList.add("leftTop-mint");
   btnColored2.classList.add("leftTop-mint");
   btnColored3.classList.add("leftTop-mint");
+  btnColored4.classList.add("leftTop-mint");
   headA.classList.add("leftTop-mint");
   lNumber.classList.add("lineardiv-mint")
   hwoIm.classList.add("lineardiv-mint")
@@ -1552,6 +1557,7 @@ fourthColoredBtn.addEventListener("click", function() {
   btnColored1.classList.add("leftTop-blue");
   btnColored2.classList.add("leftTop-blue");
   btnColored3.classList.add("leftTop-blue");
+  btnColored4.classList.add("leftTop-blue");
   headA.classList.add("leftTop-blue");
   lNumber.classList.add("lineardiv-blue")
   hwoIm.classList.add("lineardiv-blue")
@@ -1582,6 +1588,7 @@ fifthColoredBtn.addEventListener("click", function() {
   btnColored1.classList.add("leftTop-darkPink");
   btnColored2.classList.add("leftTop-darkPink");
   btnColored3.classList.add("leftTop-darkPink");
+  btnColored4.classList.add("leftTop-darkPink");
   headA.classList.add("leftTop-darkPink");
   lNumber.classList.add("lineardiv-darkPink")
   hwoIm.classList.add("lineardiv-darkPink")
@@ -1610,6 +1617,7 @@ sixColoredBtn.addEventListener("click", function() {
   btnColored1.classList.add("leftTop-yellow");
   btnColored2.classList.add("leftTop-yellow");
   btnColored3.classList.add("leftTop-yellow");
+  btnColored4.classList.add("leftTop-yellow");
   headA.classList.add("leftTop-yellow");
   lNumber.classList.add("lineardiv-yellow")
   hwoIm.classList.add("lineardiv-yellow")
