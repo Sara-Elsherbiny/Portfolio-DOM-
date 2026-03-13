@@ -1401,98 +1401,228 @@ const sixColoredBtn =document.getElementById("sixColoredBtn")
 
 
 // VARS
-const divColored =document.querySelector(".divColored")
-const leftTop =document.querySelector(".leftTop")
-const imgContainer =document.querySelector(".imgContainer")
-const fitAfterImg =document.querySelector(".fitAfterImg")
-const borderedAnimation =document.querySelector(".borderedAnimation")
-const heading = document.querySelector(".heading")
-const btnColored =document.querySelector(".btnColored")
-const btnColored1 =document.querySelector(".btnColored-1")
-const headA =document.querySelector(".headA")
+const divColored = document.querySelector(".divColored");
+const leftTop = document.querySelector(".leftTop");
+const imgContainer = document.querySelector(".imgContainer");
+const fitAfterImg = document.querySelector(".fitAfterImg");
+const borderedAnimation = document.querySelector(".borderedAnimation");
+const heading = document.querySelector(".heading");
+const btnColored = document.querySelector(".btnColored");
+const btnColored1 = document.querySelector(".btnColored-1");
+const btnColored2 = document.getElementById("btnColored-2");
+const btnColored3 = document.getElementById("btnColored-3");
+const headA = document.getElementById("headA");
+const hwoIm =document.getElementById("hwoIm")
+const hwoIm1 =document.getElementById("hwoIm1")
+const hwoIm2 =document.getElementById("hwoIm2")
+const hwoIm3 =document.getElementById("hwoIm3")
+const hwoIm4 =document.getElementById("hwoIm4")
+const hwoIm5 =document.getElementById("hwoIm5")
+const hwoIm6 =document.getElementById("hwoIm6")
+const hwoIm7 =document.getElementById("hwoIm7")
+const hwoIm8 =document.getElementById("hwoIm8")
+const hwoIm9 =document.getElementById("hwoIm9")
+const hwoIm10 =document.getElementById("hwoIm10")
+const lNumber =document.getElementById("lNumber")
+
+const elementsToUpdate = [divColored, leftTop, imgContainer, fitAfterImg, borderedAnimation, heading, btnColored, btnColored1, headA];
+
+// Array of all possible classes for color
+const colorClasses = [
+  "lineardiv-purple", "lineardiv-pink", "lineardiv-mint", "lineardiv-blue", "lineardiv-darkPink", "lineardiv-yellow",
+  "leftTop-purple", "leftTop-pink", "leftTop-mint", "leftTop-blue", "leftTop-darkPink", "leftTop-yellow",
+  "border-purple", "border-pink", "border-mint", "border-blue", "border-darkPink", "border-yellow"
+];
+
+// Function to remove old color classes
+function removeOldClasses() {
+  for (let i = 0; i < elementsToUpdate.length; i++) {
+    for (let j = 0; j < colorClasses.length; j++) {
+      elementsToUpdate[i].classList.remove(colorClasses[j]);
+    }
+  }
+}
+elementsToUpdate.push(hwoIm)
+elementsToUpdate.push(hwoIm1)
+elementsToUpdate.push(hwoIm2)
+elementsToUpdate.push(hwoIm3)
+elementsToUpdate.push(hwoIm4)
+elementsToUpdate.push(hwoIm5)
+elementsToUpdate.push(hwoIm6)
+elementsToUpdate.push(hwoIm7)
+elementsToUpdate.push(hwoIm8)
+elementsToUpdate.push(hwoIm9)
+elementsToUpdate.push(hwoIm10)
+elementsToUpdate.push(lNumber)
+elementsToUpdate.push(btnColored2)
+elementsToUpdate.push(btnColored3)
+firstColoredBtn.addEventListener("click", function() {
+  removeOldClasses();
+  divColored.classList.add("lineardiv-purple");
+  leftTop.classList.add("leftTop-purple");
+  imgContainer.classList.add("leftTop-purple");
+  fitAfterImg.classList.add("leftTop-purple");
+  borderedAnimation.classList.add("border-purple");
+  heading.classList.add("leftTop-purple");
+  btnColored.classList.add("leftTop-purple");
+  btnColored1.classList.add("leftTop-purple");
+  btnColored2.classList.add("leftTop-purple");
+  btnColored3.classList.add("leftTop-purple");
+  headA.classList.add("leftTop-purple");
+  lNumber.classList.add("lineardiv-purple")
+  hwoIm.classList.add("lineardiv-purple")
+  hwoIm1.classList.add("lineardiv-purple")
+  hwoIm9.classList.add("lineardiv-purple")
+  hwoIm7.classList.add("lineardiv-purple")
+  hwoIm5.classList.add("lineardiv-purple")
+  hwoIm2.classList.add("leftTop-purple")
+  hwoIm10.classList.add("leftTop-purple")
+  hwoIm6.classList.add("leftTop-purple")
+  hwoIm4.classList.add("leftTop-purple")
+  hwoIm3.classList.add("lineardiv-purple")
+});
+
+secondColoredBtn.addEventListener("click", function() {
+  removeOldClasses();
+  divColored.classList.add("lineardiv-pink");
+  leftTop.classList.add("leftTop-pink");
+  imgContainer.classList.add("leftTop-pink");
+  fitAfterImg.classList.add("leftTop-pink");
+  borderedAnimation.classList.add("border-pink");
+  heading.classList.add("leftTop-pink");
+  btnColored.classList.add("leftTop-pink");
+  btnColored1.classList.add("leftTop-pink");
+  btnColored2.classList.add("leftTop-pink");
+  btnColored3.classList.add("leftTop-pink");
+  headA.classList.add("leftTop-pink");
+  lNumber.classList.add("lineardiv-pink")
+  hwoIm.classList.add("lineardiv-pink")
+  hwoIm1.classList.add("lineardiv-pink")
+  hwoIm9.classList.add("lineardiv-pink")
+  hwoIm7.classList.add("lineardiv-pink")
+  hwoIm5.classList.add("lineardiv-pink")
+  hwoIm2.classList.add("leftTop-pink")
+  hwoIm10.classList.add("leftTop-pink")
+  hwoIm8.classList.add("leftTop-pink")
+  hwoIm6.classList.add("leftTop-pink")
+  hwoIm4.classList.add("leftTop-pink")
+  hwoIm3.classList.add("lineardiv-pink")
 
 
+});
+
+thirdColoredBtn.addEventListener("click", function() {
+  removeOldClasses();
+  divColored.classList.add("lineardiv-mint");
+  leftTop.classList.add("leftTop-mint");
+  imgContainer.classList.add("leftTop-mint");
+  fitAfterImg.classList.add("leftTop-mint");
+  borderedAnimation.classList.add("border-mint");
+  heading.classList.add("leftTop-mint");
+  btnColored.classList.add("leftTop-mint");
+  btnColored1.classList.add("leftTop-mint");
+  btnColored2.classList.add("leftTop-mint");
+  btnColored3.classList.add("leftTop-mint");
+  headA.classList.add("leftTop-mint");
+  lNumber.classList.add("lineardiv-mint")
+  hwoIm.classList.add("lineardiv-mint")
+  hwoIm1.classList.add("lineardiv-mint")
+  hwoIm9.classList.add("lineardiv-mint")
+  hwoIm7.classList.add("lineardiv-mint")
+  hwoIm5.classList.add("lineardiv-mint")
+  hwoIm2.classList.add("leftTop-mint")
+  hwoIm10.classList.add("leftTop-mint")
+  hwoIm8.classList.add("leftTop-mint")
+  hwoIm6.classList.add("leftTop-mint")
+  hwoIm4.classList.add("leftTop-mint")
+  hwoIm3.classList.add("lineardiv-mint")
 
 
-firstColoredBtn.addEventListener("click",function(){
-  divColored.classList.add("lineardiv-purple")
-  leftTop.classList.add("leftTop-purple")
-  imgContainer.classList.add("leftTop-purple")
-  fitAfterImg.classList.add("leftTop-purple")
-  borderedAnimation.classList.add("border-purple")
-  heading.classList.add("leftTop-purple")
-  btnColored.classList.add("leftTop-purple ")
-  btnColored1.classList.add("leftTop-purple ")
-  headA.classList.add("leftTop-purple")
-})
+});
+
+fourthColoredBtn.addEventListener("click", function() {
+  removeOldClasses();
+  divColored.classList.add("lineardiv-blue");
+  leftTop.classList.add("leftTop-blue");
+  imgContainer.classList.add("leftTop-blue");
+  fitAfterImg.classList.add("leftTop-blue");
+  borderedAnimation.classList.add("border-blue");
+  heading.classList.add("leftTop-blue");
+  btnColored.classList.add("leftTop-blue");
+  btnColored1.classList.add("leftTop-blue");
+  btnColored2.classList.add("leftTop-blue");
+  btnColored3.classList.add("leftTop-blue");
+  headA.classList.add("leftTop-blue");
+  lNumber.classList.add("lineardiv-blue")
+  hwoIm.classList.add("lineardiv-blue")
+  hwoIm1.classList.add("lineardiv-blue")
+  hwoIm9.classList.add("lineardiv-blue")
+  hwoIm7.classList.add("lineardiv-blue")
+  hwoIm5.classList.add("lineardiv-blue")
+  hwoIm2.classList.add("leftTop-blue")
+  hwoIm10.classList.add("leftTop-blue")
+  hwoIm8.classList.add("leftTop-blue")
+  hwoIm2.classList.add("leftTop-blue")
+  hwoIm6.classList.add("leftTop-blue")
+  hwoIm4.classList.add("leftTop-blue")
+  hwoIm3.classList.add("lineardiv-blue")
 
 
-secondColoredBtn.addEventListener("click",function(){
-  divColored.classList.add("lineardiv-pink")
-  leftTop.classList.add("leftTop-pink")
-  imgContainer.classList.add("leftTop-pink")
-  fitAfterImg.classList.add("leftTop-pink")
-  borderedAnimation.classList.add("border-pink")
-  heading.classList.add("leftTop-pink")
-  btnColored.classList.add("leftTop-pink")
-  btnColored1.classList.add("leftTop-pink")
-  headA.classList.add("leftTop-pink")
+});
+
+fifthColoredBtn.addEventListener("click", function() {
+  removeOldClasses();
+  divColored.classList.add("lineardiv-darkPink");
+  leftTop.classList.add("leftTop-darkPink");
+  imgContainer.classList.add("leftTop-darkPink");
+  fitAfterImg.classList.add("leftTop-darkPink");
+  borderedAnimation.classList.add("border-darkPink");
+  heading.classList.add("leftTop-darkPink");
+  btnColored.classList.add("leftTop-darkPink");
+  btnColored1.classList.add("leftTop-darkPink");
+  btnColored2.classList.add("leftTop-darkPink");
+  btnColored3.classList.add("leftTop-darkPink");
+  headA.classList.add("leftTop-darkPink");
+  lNumber.classList.add("lineardiv-darkPink")
+  hwoIm.classList.add("lineardiv-darkPink")
+  hwoIm1.classList.add("lineardiv-darkPink")
+  hwoIm9.classList.add("lineardiv-darkPink")
+  hwoIm7.classList.add("lineardiv-darkPink")
+  hwoIm5.classList.add("lineardiv-darkPink")
+  hwoIm2.classList.add("leftTop-darkPink") 
+  hwoIm10.classList.add("leftTop-darkPink") 
+  hwoIm8.classList.add("leftTop-darkPink") 
+  hwoIm6.classList.add("leftTop-darkPink") 
+  hwoIm4.classList.add("leftTop-darkPink") 
+  hwoIm3.classList.add("lineardiv-darkPink")
+
+});
+
+sixColoredBtn.addEventListener("click", function() {
+  removeOldClasses();
+  divColored.classList.add("lineardiv-yellow");
+  leftTop.classList.add("leftTop-yellow");
+  imgContainer.classList.add("leftTop-yellow");
+  fitAfterImg.classList.add("leftTop-yellow");
+  borderedAnimation.classList.add("border-yellow");
+  heading.classList.add("leftTop-yellow");
+  btnColored.classList.add("leftTop-yellow");
+  btnColored1.classList.add("leftTop-yellow");
+  btnColored2.classList.add("leftTop-yellow");
+  btnColored3.classList.add("leftTop-yellow");
+  headA.classList.add("leftTop-yellow");
+  lNumber.classList.add("lineardiv-yellow")
+  hwoIm.classList.add("lineardiv-yellow")
+  hwoIm1.classList.add("lineardiv-yellow")
+  hwoIm9.classList.add("lineardiv-yellow")
+  hwoIm7.classList.add("lineardiv-yellow")
+  hwoIm5.classList.add("lineardiv-yellow")
+  hwoIm3.classList.add("lineardiv-yellow")
+  hwoIm2.classList.add("leftTop-yellow")
+  hwoIm8.classList.add("leftTop-yellow")
+  hwoIm10.classList.add("leftTop-yellow")
+  hwoIm6.classList.add("leftTop-yellow")
+  hwoIm4.classList.add("leftTop-yellow")
   
-})
 
-thirdColoredBtn.addEventListener("click",function(){
-  divColored.classList.add("lineardiv-mint")
-  leftTop.classList.add("leftTop-mint")
-  imgContainer.classList.add("leftTop-mint")
-  borderedAnimation.classList.add("border-mint")
-  fitAfterImg.classList.add("leftTop-mint") 
-  heading.classList.add("leftTop-mint")
-  btnColored.classList.add("leftTop-mint")
-  btnColored1.classList.add("leftTop-mint")
-  headA.classList.add("leftTop-mint")
-})
-
-
-
-fourthColoredBtn.addEventListener("click",function(){
-  divColored.classList.add("lineardiv-blue")
-  leftTop.classList.add("leftTop-blue")
-  imgContainer.classList.add("leftTop-blue")
-  borderedAnimation.classList.add("border-blue")
-  fitAfterImg.classList.add("leftTop-blue") 
-  heading.classList.add("leftTop-blue")
-  btnColored.classList.add("leftTop-blue")
-  btnColored1.classList.add("leftTop-blue")
-  headA.classList.add("leftTop-blue")
-  
-})
-
-
-fifthColoredBtn.addEventListener("click",function(){
-  divColored.classList.add("lineardiv-darkPink")
-  leftTop.classList.add("leftTop-darkPink")
-  imgContainer.classList.add("leftTop-darkPink")
-  borderedAnimation.classList.add("border-darkPink")
-  fitAfterImg.classList.add("leftTop-darkPink") 
-  headA.classList.add("leftTop-darkPink")
-  
-  heading.classList.add("leftTop-darkPink")
-  btnColored.classList.add("leftTop-darkPink")
-  btnColored1.classList.add("leftTop-darkPink")
-  
-})
-
-
-sixColoredBtn.addEventListener("click",function(){
-  
-  divColored.classList.add("lineardiv-yellow")
-  leftTop.classList.add("leftTop-yellow")
-  imgContainer.classList.add("leftTop-yellow")
-  borderedAnimation.classList.add("border-yellow")
-  fitAfterImg.classList.add("leftTop-yellow") 
-  heading.classList.add("leftTop-yellow")
-  btnColored.classList.add("leftTop-yellow")
-  btnColored1.classList.add("leftTop-yellow")
-  headA.classList.add("leftTop-yellow")
-})
-
+});
